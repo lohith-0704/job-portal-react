@@ -1,0 +1,179 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  background: #fff;
+  color: #000;
+}
+
+.site-header {
+  background: #000;
+  color: #fff;
+  padding: 20px 7%;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: #f2f2f2;
+  color: #000;
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.hero h1,
+.section-heading h2 {
+  font-weight: 400;
+}
+
+.hero-button {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 12px 22px;
+  text-decoration: none;
+  border: 1px solid #000;
+}
+
+.hero-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.jobs-section {
+  padding: 45px 7%;
+  background: #fff;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.job-count {
+  border: 1px solid #000;
+  padding: 8px 12px;
+  color: #000;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.job-card {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 22px;
+  transition: 0.2s;
+}
+
+.job-card:hover {
+  background: #f5f5f5;
+  box-shadow: 3px 3px 0 #000;
+}
+
+.job-card h3,
+.job-card h4 {
+  color: #000;
+  font-weight: 400;
+}
+
+.job-card p,
+.job-details {
+  color: #333;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.company-mark {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  font-weight: 400;
+}
+
+.job-type {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: 6px 10px;
+}
+
+.job-card button {
+  width: 100%;
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.job-card button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.sample-note {
+  color: #555;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .job-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
