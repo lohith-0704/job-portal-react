@@ -11,7 +11,7 @@ Features:
 
 HOW TO RUN ON WINDOWS:
 
-1. Extract this ZIP file.
+1. Extract the JOB PORTAL file.
 2. Open the extracted job-portal-basic folder in VS Code.
 3. Open Terminal > New Terminal.
 4. Make sure the terminal is in the folder containing package.json.
